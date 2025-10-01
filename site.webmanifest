@@ -1,0 +1,13 @@
+{
+  "short_name": "Skyyym",
+  "name": "Skyyym - Portfolio of Andres Guzman",
+  "icons": [{
+    "src": "icon.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#f4f7fc",
+  "display": "standalone",
+  "theme_color": "#f4f7fc"
+}
