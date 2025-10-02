@@ -6,136 +6,57 @@
 	<title>Skyyym — Soon</title>
 	<meta name="description"
 		content="Thank you for visiting but right now I'm working on a new design for my website, please come back soon.">
+	<meta name="author" content="Andrés Guzmán">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Open Graph / Social Preview -->
+	<meta property="og:title" content="Skyyym — Soon">
+	<meta property="og:description" content="Skyyym website is under construction. Check back soon!">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://www.skyyym.com/">
+	<meta property="og:image" content="tile-wide.png">
+
+	<!-- Favicon & Manifest -->
 	<link rel="manifest" href="site.webmanifest">
 	<link rel="apple-touch-icon" href="icon.png">
 	<link rel="icon" type="image/png" href="favicon.png">
 	<meta name="theme-color" content="#f4f7fc">
+
 	<style>
 		@keyframes revealUp {
 			0% {
-				transform: translateY(40px)
+				transform: translateY(50px);
 			}
 
 			to {
-				transform: translateY(0)
+				transform: translateY(0);
 			}
 		}
 
 		@keyframes revealUpmobile {
 			0% {
-				transform: translateY(76px)
+				transform: translateY(50px);
 			}
 
 			to {
-				transform: translateY(0)
+				transform: translateY(0);
 			}
 		}
 
 		@font-face {
 			font-family: 'Proxima Extrabold';
-			src: url(fonts/proximanova-extrabold-webfont.woff2) format('woff2'), url(fonts/proximanova-extrabold-webfont.woff) format('woff');
-			font-weight: 400;
-			font-style: normal;
-			font-display: swap
-		}
-
-		@font-face {
-			font-family: 'Proxima Light';
-			src: url(fonts/proximanova-light-webfont.woff2) format('woff2'), url(fonts/proximanova-light-webfont.woff) format('woff');
-			font-weight: 400;
-			font-style: normal;
-			font-display: swap
-		}
-
-		body {
-			background-color: #f4f7fc;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			height: 100vh;
-			margin: 0
-		}
-
-		main {
-			height: 44px;
-			overflow: hidden
-		}
-
-		#coming--soon {
-			transform: translateY(40px);
-			animation-name: revealUp;
-			animation-duration: 2500ms;
-			animation-timing-function: cubic-bezier(.075, .82, .165, 1);
-			animation-fill-mode: forwards;
-			animation-delay: 1000ms
-		}
-
-		.coming--soon--portafolio,
-		.coming--soon--skyyym {
-			color: #121212;
-			text-transform: uppercase
-		}
-
-		.coming--soon--skyyym {
-			font: 1.5vw "Proxima Extrabold", Arial, Helvetica, sans-serif
-		}
-
-		.coming--soon--portafolio {
-			font: 1.5vw "Proxima Light", Arial, Helvetica, sans-serif
-		}
-
-		@media screen and (max-width:720px) {
-			#coming--soon {
-				text-align: center;
-				transform: translateY(76px);
-				animation-name: revealUpmobile
-			}
-
-			.coming--soon--portafolio,
-			.coming--soon--skyyym {
-				font-size: 5vw
-			}
-
-			main {
-				height: 82px
-			}
-		}
-
-		@keyframes revealUp {
-			0% {
-				transform: translateY(40px);
-			}
-
-			to {
-				transform: translateY(0);
-			}
-		}
-
-		@keyframes revealUpmobile {
-			0% {
-				transform: translateY(76px);
-			}
-
-			to {
-				transform: translateY(0);
-			}
-		}
-
-		@font-face {
-			font-family: "Proxima Extrabold";
-			src: url(fonts/proximanova-extrabold-webfont.woff2) format("woff2"),
-				url(fonts/proximanova-extrabold-webfont.woff) format("woff");
-			font-weight: 400;
+			src: url(fonts/proximanova-extrabold-webfont.woff2) format('woff2'),
+				url(fonts/proximanova-extrabold-webfont.woff) format('woff');
+			font-weight: 800;
 			font-style: normal;
 			font-display: swap;
 		}
 
 		@font-face {
-			font-family: "Proxima Light";
-			src: url(fonts/proximanova-light-webfont.woff2) format("woff2"),
-				url(fonts/proximanova-light-webfont.woff) format("woff");
-			font-weight: 400;
+			font-family: 'Proxima Light';
+			src: url(fonts/proximanova-light-webfont.woff2) format('woff2'),
+				url(fonts/proximanova-light-webfont.woff) format('woff');
+			font-weight: 300;
 			font-style: normal;
 			font-display: swap;
 		}
@@ -150,38 +71,42 @@
 		}
 
 		main {
-			height: 44px;
+			min-height: 50px;
+			/* increased from 44px to fit h1 */
 			overflow: hidden;
-			/* border: 1px solid #0e011c; */
+			display: flex;
+			align-items: center;
+			/* center vertically */
+			justify-content: center;
 		}
 
 		#coming--soon {
-			transform: translateY(40px);
+			transform: translateY(50px);
 			animation-name: revealUp;
 			animation-duration: 1150ms;
 			animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
 			animation-fill-mode: forwards;
 			animation-delay: 750ms;
-		}
-
-		.coming--soon--portafolio,
-		.coming--soon--skyyym {
-			color: #05010a;
-			text-transform: uppercase;
+			margin: 0;
+			/* remove default h1 margins */
+			text-align: center;
 		}
 
 		.coming--soon--skyyym {
 			font: 1.5vw "Proxima Extrabold", Arial, Helvetica, sans-serif;
+			color: #05010a;
+			text-transform: uppercase;
 		}
 
 		.coming--soon--portafolio {
 			font: 1.5vw "Proxima Light", Arial, Helvetica, sans-serif;
+			color: #05010a;
+			text-transform: uppercase;
 		}
 
 		@media screen and (max-width: 720px) {
 			#coming--soon {
-				text-align: center;
-				transform: translateY(76px);
+				transform: translateY(50px);
 				animation-name: revealUpmobile;
 			}
 
@@ -191,7 +116,8 @@
 			}
 
 			main {
-				height: 82px;
+				min-height: 50px;
+				/* enough for mobile font size */
 			}
 		}
 	</style>
@@ -199,9 +125,10 @@
 
 <body>
 	<main>
-		<div id="coming--soon">
-			<span class="coming--soon--skyyym">Skyyym [2025], </span><span class="coming--soon--portafolio">Muy pronto</span>
-		</div>
+		<h1 id="coming--soon">
+			<span class="coming--soon--skyyym">Skyyym [2025], </span>
+			<span class="coming--soon--portafolio">Muy pronto</span>
+		</h1>
 	</main>
 </body>
 
